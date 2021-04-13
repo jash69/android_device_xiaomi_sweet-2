@@ -51,7 +51,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export OF_USE_MAGISKBOOT_FOR_ALL_PATCHES=1
 	export OF_DONT_PATCH_ENCRYPTED_DEVICE=1
 	export OF_SKIP_FBE_DECRYPTION=1
-#	export FOX_DELETE_AROMAFM=1
+	export FOX_DELETE_AROMAFM=1
 #	export OF_FL_PATH1="/sys/devices/virtual/camera/flash/rear_flash"
 #	export OF_FL_PATH2="/sys/devices/virtual/camera/flash/rear_flash"
 #	export OF_FLASHLIGHT_ENABLE=0
