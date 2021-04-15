@@ -4,10 +4,15 @@
 
 # mount point	fstype	device			device2			flags
 /system_image	emmc	/dev/block/mapper/system			flags=backup=0;display="System Image";flashimg=1
+/system		ext4	/dev/block/mapper/system			flags=backup=0;display="System"
 /vendor_image	emmc	/dev/block/mapper/vendor			flags=backup=0;display="Vendor Image";flashimg=1
+/vendor		ext4	/dev/block/mapper/vendor			flags=backup=0;display="Vendor"
 /product_image	emmc	/dev/block/mapper/product			flags=backup=0;display="Product Image";flashimg=1
+/product	ext4	/dev/block/mapper/product			flags=backup=0;display="Product"
 /odm_image	emmc	/dev/block/mapper/odm				flags=backup=0;display="Odm Image";flashimg=1
+/odm		ext4	/dev/block/mapper/odm				flags=backup=0;display="Odm"
 /sysext_image	emmc	/dev/block/mapper/system_ext			flags=backup=0;display="System_ext Image";flashimg=1
+/sysext		ext4	/dev/block/mapper/system_ext			flags=backup=0;display="System_ext"
 
 /metadata	ext4	/dev/block/bootdevice/by-name/metadata		flags=display="Metadata";backup=1;wrappedkey
 /super_image	emmc	/dev/block/bootdevice/by-name/super		flags=backup=1;display="Super"
